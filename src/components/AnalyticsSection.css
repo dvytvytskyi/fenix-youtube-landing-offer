@@ -431,15 +431,7 @@
   }
 
   .analytics-buttons {
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 80px;
-  }
-
-  .analytics-btn {
-    width: 100%;
-    padding: 12px 24px;
-    font-size: 13px;
+    display: none; /* Приховано на мобільній версії */
   }
 }
 
@@ -492,13 +484,7 @@
   }
 
   .analytics-buttons {
-    margin-top: 60px;
-    gap: 10px;
-  }
-
-  .analytics-btn {
-    padding: 10px 20px;
-    font-size: 12px;
+    display: none; /* Приховано на мобільній версії */
   }
 }
 
