@@ -1,7 +1,7 @@
 import React from 'react'
 import './HeroSection.css'
 
-function HeroSection({ data, onButtonHover, onStartClick, isVisible }) {
+function HeroSection({ data, onButtonHover, onStartClick, isVisible, onPersonalOfferClick, onAnalyticsClick, onVideoCasesClick }) {
   return (
     <section className={`hero-section ${!isVisible ? 'hidden' : ''}`}>
       <div className="hero-content">
@@ -11,6 +11,19 @@ function HeroSection({ data, onButtonHover, onStartClick, isVisible }) {
         <p className="hero-subtitle">
           {data.subtitle}
         </p>
+        
+        {/* Mobile Navigation */}
+        <div className="mobile-nav">
+          <button className="mobile-nav-btn" onClick={onPersonalOfferClick}>
+            Personal Offer
+          </button>
+          <button className="mobile-nav-btn" onClick={onAnalyticsClick}>
+            Analytics
+          </button>
+          <button className="mobile-nav-btn" onClick={onVideoCasesClick}>
+            Video Cases
+          </button>
+        </div>
 
         <div className="hero-cta">
           <button 

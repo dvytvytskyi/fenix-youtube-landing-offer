@@ -60,7 +60,7 @@
 /* Back Button */
 .detailed-analytics .back-button {
   position: fixed;
-  bottom: 40px;
+  bottom: 80px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -571,7 +571,7 @@
   }
 
   .detailed-analytics .back-button {
-    bottom: 40px;
+    bottom: 80px;
   }
 
   .analytics-main-title {
@@ -603,7 +603,7 @@
   }
 
   .detailed-analytics .back-button {
-    bottom: 24px;
+    bottom: 100px;
     padding: 10px 16px;
     font-size: 12px;
   }
