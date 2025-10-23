@@ -32,6 +32,8 @@ function App() {
 
   const handlePersonalOfferClick = () => {
     setShowPersonalOffer(true)
+    setShowDetailedAnalytics(false)
+    setShowVideoCases(false)
   }
 
   const handleBackToHome = () => {
@@ -47,6 +49,8 @@ function App() {
 
   const handleDetailedAnalyticsClick = () => {
     setShowDetailedAnalytics(true)
+    setShowPersonalOffer(false)
+    setShowVideoCases(false)
   }
 
   const handleBackToAnalytics = () => {
@@ -62,6 +66,8 @@ function App() {
 
   const handleVideoCasesClick = () => {
     setShowVideoCases(true)
+    setShowPersonalOffer(false)
+    setShowDetailedAnalytics(false)
   }
 
   const handleBackFromVideoCases = () => {
