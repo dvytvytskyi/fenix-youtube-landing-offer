@@ -1,0 +1,76 @@
+/* Mobile Navigation Fixed at Bottom */
+.mobile-nav-fixed {
+  display: none; /* Hidden by default on desktop */
+}
+
+@media (max-width: 768px) {
+  .mobile-nav-fixed {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    gap: 8px;
+    padding: 12px 16px;
+    padding-bottom: calc(12px + env(safe-area-inset-bottom));
+    background: rgba(10, 14, 26, 0.95);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(91, 143, 201, 0.2);
+    z-index: 1000;
+  }
+
+  .mobile-nav-btn {
+    flex: 1;
+    background: rgba(91, 143, 201, 0.1);
+    border: 1px solid rgba(91, 143, 201, 0.3);
+    border-radius: 8px;
+    color: #5b8fc9;
+    padding: 14px 8px;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .mobile-nav-btn:hover {
+    background: rgba(91, 143, 201, 0.2);
+    border-color: rgba(91, 143, 201, 0.5);
+  }
+
+  .mobile-nav-btn:active {
+    transform: scale(0.98);
+  }
+
+  /* Primary button style for Personal Offer */
+  .mobile-nav-btn-primary {
+    background: linear-gradient(135deg, #5b8fc9 0%, #4a7ab0 100%);
+    border-color: #5b8fc9;
+    color: #ffffff;
+    font-weight: 500;
+  }
+
+  .mobile-nav-btn-primary:hover {
+    background: linear-gradient(135deg, #6a9fd9 0%, #5a8ac0 100%);
+    border-color: #6a9fd9;
+    box-shadow: 0 0 12px rgba(91, 143, 201, 0.4);
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-nav-fixed {
+    gap: 6px;
+    padding: 10px 12px;
+    padding-bottom: calc(10px + env(safe-area-inset-bottom));
+  }
+
+  .mobile-nav-btn {
+    padding: 12px 6px;
+    font-size: 10px;
+    letter-spacing: 0.3px;
+  }
+}
+

@@ -379,7 +379,7 @@
 
 @media (max-width: 768px) {
   .analytics-section {
-    padding: 30px 24px;
+    padding: 30px 24px 100px 24px; /* Added bottom padding for mobile navigation */
   }
 
   .analytics-main-heading {
@@ -445,7 +445,7 @@
 
 @media (max-width: 480px) {
   .analytics-section {
-    padding: 24px 16px;
+    padding: 24px 16px 100px 16px; /* Added bottom padding for mobile navigation */
   }
 
   .analytics-main-heading {
