@@ -6,7 +6,7 @@ function HeroSection({ data, onButtonHover, onStartClick, isVisible }) {
     <section className={`hero-section ${!isVisible ? 'hidden' : ''}`}>
       <div className="hero-content">
         <h1 className="hero-greeting">
-          Hello <span className="hero-name">{data.clientName}</span>
+          Hello
         </h1>
         <p className="hero-subtitle">
           {data.subtitle}
