@@ -35,13 +35,12 @@ function App() {
 
   const handleBackToHome = () => {
     setShowPersonalOffer(false)
+    setShowDetailedAnalytics(false)
+    setShowVideoCases(false)
+    setShowHowItWorks(false)
     // Переконуємось що Stats та Analytics активні
-    if (!showStats) {
-      setShowStats(true)
-    }
-    if (!showAnalytics) {
-      setShowAnalytics(true)
-    }
+    setShowStats(true)
+    setShowAnalytics(true)
   }
 
   const handleDetailedAnalyticsClick = () => {
@@ -50,13 +49,12 @@ function App() {
 
   const handleBackToAnalytics = () => {
     setShowDetailedAnalytics(false)
+    setShowPersonalOffer(false)
+    setShowVideoCases(false)
+    setShowHowItWorks(false)
     // Переконуємось що Stats та Analytics активні
-    if (!showStats) {
-      setShowStats(true)
-    }
-    if (!showAnalytics) {
-      setShowAnalytics(true)
-    }
+    setShowStats(true)
+    setShowAnalytics(true)
   }
 
   const handleVideoCasesClick = () => {
@@ -65,13 +63,12 @@ function App() {
 
   const handleBackFromVideoCases = () => {
     setShowVideoCases(false)
+    setShowPersonalOffer(false)
+    setShowDetailedAnalytics(false)
+    setShowHowItWorks(false)
     // Переконуємось що Stats та Analytics активні
-    if (!showStats) {
-      setShowStats(true)
-    }
-    if (!showAnalytics) {
-      setShowAnalytics(true)
-    }
+    setShowStats(true)
+    setShowAnalytics(true)
   }
 
   useEffect(() => {
