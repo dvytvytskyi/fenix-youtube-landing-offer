@@ -379,7 +379,7 @@
 
 @media (max-width: 768px) {
   .analytics-section {
-    padding: 30px 24px 100px 24px; /* Added bottom padding for mobile navigation */
+    padding: 100px 24px 100px 24px; /* Added top padding for header + bottom for mobile navigation */
   }
 
   .analytics-main-heading {
@@ -431,9 +431,7 @@
   }
 
   .analytics-buttons {
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 80px;
+    display: none; /* Hide on mobile - using bottom fixed navigation instead */
   }
 
   .analytics-btn {
@@ -445,7 +443,7 @@
 
 @media (max-width: 480px) {
   .analytics-section {
-    padding: 24px 16px 100px 16px; /* Added bottom padding for mobile navigation */
+    padding: 90px 16px 100px 16px; /* Added top padding for header + bottom for mobile navigation */
   }
 
   .analytics-main-heading {
@@ -492,8 +490,7 @@
   }
 
   .analytics-buttons {
-    margin-top: 60px;
-    gap: 10px;
+    display: none; /* Hide on mobile - using bottom fixed navigation instead */
   }
 
   .analytics-btn {

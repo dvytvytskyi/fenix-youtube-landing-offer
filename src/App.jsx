@@ -9,7 +9,6 @@ import HowItWorksSection from './components/HowItWorksSection'
 import PersonalOfferSection from './components/PersonalOfferSection'
 import DetailedAnalytics from './components/DetailedAnalytics'
 import VideoCasesSection from './components/VideoCasesSection'
-import MobileNavigation from './components/MobileNavigation'
 import './App.css'
 import data from './structured.json'
 
@@ -36,12 +35,13 @@ function App() {
 
   const handleBackToHome = () => {
     setShowPersonalOffer(false)
-    setShowDetailedAnalytics(false)
-    setShowVideoCases(false)
-    setShowHowItWorks(false)
     // Переконуємось що Stats та Analytics активні
-    setShowStats(true)
-    setShowAnalytics(true)
+    if (!showStats) {
+      setShowStats(true)
+    }
+    if (!showAnalytics) {
+      setShowAnalytics(true)
+    }
   }
 
   const handleDetailedAnalyticsClick = () => {
@@ -50,12 +50,13 @@ function App() {
 
   const handleBackToAnalytics = () => {
     setShowDetailedAnalytics(false)
-    setShowPersonalOffer(false)
-    setShowVideoCases(false)
-    setShowHowItWorks(false)
     // Переконуємось що Stats та Analytics активні
-    setShowStats(true)
-    setShowAnalytics(true)
+    if (!showStats) {
+      setShowStats(true)
+    }
+    if (!showAnalytics) {
+      setShowAnalytics(true)
+    }
   }
 
   const handleVideoCasesClick = () => {
@@ -64,12 +65,13 @@ function App() {
 
   const handleBackFromVideoCases = () => {
     setShowVideoCases(false)
-    setShowPersonalOffer(false)
-    setShowDetailedAnalytics(false)
-    setShowHowItWorks(false)
     // Переконуємось що Stats та Analytics активні
-    setShowStats(true)
-    setShowAnalytics(true)
+    if (!showStats) {
+      setShowStats(true)
+    }
+    if (!showAnalytics) {
+      setShowAnalytics(true)
+    }
   }
 
   useEffect(() => {
@@ -99,6 +101,9 @@ function App() {
         onButtonHover={setIsVideoVisible}
         onStartClick={handleStartClick}
         isVisible={!showStats && !showPersonalOffer && !showDetailedAnalytics && !showVideoCases}
+        onPersonalOfferClick={handlePersonalOfferClick}
+        onAnalyticsClick={handleDetailedAnalyticsClick}
+        onVideoCasesClick={handleVideoCasesClick}
       />
       <StatsSection 
         stats={data.stats}
@@ -127,12 +132,6 @@ function App() {
       <VideoCasesSection 
         isVisible={showVideoCases}
         onBackClick={handleBackFromVideoCases}
-      />
-      <MobileNavigation 
-        isVisible={showAnalytics && !showPersonalOffer && !showDetailedAnalytics && !showVideoCases}
-        onPersonalOfferClick={handlePersonalOfferClick}
-        onAnalyticsClick={handleDetailedAnalyticsClick}
-        onVideoCasesClick={handleVideoCasesClick}
       />
     </div>
   )
