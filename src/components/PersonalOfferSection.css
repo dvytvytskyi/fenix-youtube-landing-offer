@@ -3,8 +3,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: fit-content;
-  min-height: 100vh;
+  height: 100vh;
+  height: 100dvh;
   background: linear-gradient(180deg, #0a0e1a 0%, #060911 100%);
   padding: 120px 80px 120px 80px;
   opacity: 0;
