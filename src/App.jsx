@@ -93,6 +93,7 @@ function App() {
       <Header 
         isVisible={(showAnalytics && !showHowItWorks) || showPersonalOffer || showDetailedAnalytics || showVideoCases}
         onPersonalOfferClick={handlePersonalOfferClick}
+        onAnalyticsClick={handleDetailedAnalyticsClick}
         onVideoCasesClick={handleVideoCasesClick}
       />
       <AnimatedBackground />
