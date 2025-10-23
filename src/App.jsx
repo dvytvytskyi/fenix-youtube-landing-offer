@@ -102,9 +102,6 @@ function App() {
         onButtonHover={setIsVideoVisible}
         onStartClick={handleStartClick}
         isVisible={!showStats && !showPersonalOffer && !showDetailedAnalytics && !showVideoCases}
-        onPersonalOfferClick={handlePersonalOfferClick}
-        onAnalyticsClick={handleDetailedAnalyticsClick}
-        onVideoCasesClick={handleVideoCasesClick}
       />
       <StatsSection 
         stats={data.stats}
