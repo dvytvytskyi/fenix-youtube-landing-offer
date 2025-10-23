@@ -135,7 +135,7 @@ function App() {
         onBackClick={handleBackFromVideoCases}
       />
       <MobileNavigation 
-        isVisible={showAnalytics && !showPersonalOffer && !showDetailedAnalytics && !showVideoCases && !showHowItWorks}
+        isVisible={showAnalytics || showPersonalOffer || showDetailedAnalytics || showVideoCases}
         onPersonalOfferClick={handlePersonalOfferClick}
         onAnalyticsClick={handleDetailedAnalyticsClick}
         onVideoCasesClick={handleVideoCasesClick}
