@@ -162,7 +162,7 @@
 
 @media (max-width: 768px) {
   .hero-section {
-    padding: 30px 24px 100px 24px; /* Added bottom padding for fixed nav */
+    padding: 30px 24px;
   }
   
   .hero-greeting {
@@ -191,7 +191,7 @@
 
 @media (max-width: 480px) {
   .hero-section {
-    padding: 20px 20px 100px 20px; /* Added bottom padding for fixed nav */
+    padding: 20px 20px;
     min-height: 100vh;
     min-height: 100dvh;
   }

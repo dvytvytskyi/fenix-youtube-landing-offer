@@ -11,7 +11,6 @@ function HeroSection({ data, onButtonHover, onStartClick, isVisible }) {
         <p className="hero-subtitle">
           {data.subtitle}
         </p>
-
         <div className="hero-cta">
           <button 
             className="start-button"

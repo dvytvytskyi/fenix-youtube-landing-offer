@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.css'
 
-function Header({ isVisible, onPersonalOfferClick, onAnalyticsClick, onVideoCasesClick }) {
+function Header({ isVisible, onPersonalOfferClick, onVideoCasesClick }) {
   return (
     <header className={`header ${isVisible ? 'visible' : ''}`}>
       <div className="header-container">
@@ -13,7 +13,7 @@ function Header({ isVisible, onPersonalOfferClick, onAnalyticsClick, onVideoCase
         {/* Навігація */}
         <nav className="header-nav">
           <button onClick={onPersonalOfferClick} className="nav-link highlighted">Personal Offer</button>
-          <button onClick={onAnalyticsClick} className="nav-link">Analytics</button>
+          <a href="#analytics" className="nav-link">Analytics</a>
           <button onClick={onVideoCasesClick} className="nav-link">Video Cases</button>
         </nav>
 

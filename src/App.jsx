@@ -9,7 +9,6 @@ import HowItWorksSection from './components/HowItWorksSection'
 import PersonalOfferSection from './components/PersonalOfferSection'
 import DetailedAnalytics from './components/DetailedAnalytics'
 import VideoCasesSection from './components/VideoCasesSection'
-import MobileNavigation from './components/MobileNavigation'
 import './App.css'
 import data from './structured.json'
 
@@ -93,7 +92,6 @@ function App() {
       <Header 
         isVisible={(showAnalytics && !showHowItWorks) || showPersonalOffer || showDetailedAnalytics || showVideoCases}
         onPersonalOfferClick={handlePersonalOfferClick}
-        onAnalyticsClick={handleDetailedAnalyticsClick}
         onVideoCasesClick={handleVideoCasesClick}
       />
       <AnimatedBackground />
@@ -131,12 +129,6 @@ function App() {
       <VideoCasesSection 
         isVisible={showVideoCases}
         onBackClick={handleBackFromVideoCases}
-      />
-      <MobileNavigation 
-        isVisible={showAnalytics || showPersonalOffer || showDetailedAnalytics || showVideoCases}
-        onPersonalOfferClick={handlePersonalOfferClick}
-        onAnalyticsClick={handleDetailedAnalyticsClick}
-        onVideoCasesClick={handleVideoCasesClick}
       />
     </div>
   )
