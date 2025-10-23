@@ -30,7 +30,7 @@
 /* Back Button */
 .video-cases-section .back-button {
   position: fixed;
-  bottom: 80px;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -292,7 +292,7 @@
   }
 
   .video-cases-section .back-button {
-    bottom: 50px;
+    bottom: 70px;
     padding: 10px 16px;
     font-size: 12px;
   }
